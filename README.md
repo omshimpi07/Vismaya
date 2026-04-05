@@ -1,12 +1,41 @@
-# React + Vite
+# Vismaya
+Vismaya is a full-stack women safety and health platform that integrates emergency response features with health and wellness tracking. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Vismaya – Women Safety & Health Platform
 
-Currently, two official plugins are available:
+Vismaya is a full-stack web application designed to empower women by combining personal safety, health monitoring, and community support into a single platform.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
 
-## Expanding the ESLint configuration
+## 🔐 Safety Tools
+- SOS emergency alerts with real-time location sharing
+- Fake call simulation for emergency escape
+- Nearby police station locator
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🏥 Health Hub
+- Menstrual cycle prediction
+- BMI calculator
+- Nutrition recommendations
+- Fitness guidance
+
+## 🌐 Community & Platform
+- User authentication and secure data handling
+- Real-time database integration
+- Modular and user-friendly interface
+
+## 🛠️ Tech Stack
+- Frontend: React.js
+- Backend: Firebase (Authentication, Realtime Database, Storage)
+- APIs: Geo-location, healthcare, and external data services
+
+## 🎯 Objective
+To provide a unified platform that enhances women's safety and promotes health awareness using modern web technologies.
+
+## ⚙️ Setup
+1. Clone the repository
+2. Create a `.env` file
+3. Add Firebase configuration
+4. Run:
+   ```bash
+   npm install
+   npm run dev
