@@ -52,7 +52,7 @@ const Navbar = () => {
   
       // Send message with location to each contact
       contacts.forEach((contact) => {
-        const url = `http://api.textmebot.com/send.php?recipient=${contact}&apikey=oNJFHzWNvPX6&text=${encodeURIComponent(fullMessage)}`;
+        const url = `http://api.textmebot.com/send.php?recipient=${contact}&apikey=${process.env.REACT_APP_TEXTME_API_KEY}&text=${encodeURIComponent(fullMessage)}`;
         fetch(url);
       });
     }, (error) => {

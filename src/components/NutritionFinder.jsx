@@ -3,7 +3,7 @@ import { LineChart, BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, L
 import { Search, Info, ArrowRight } from 'lucide-react';
 
 // API key for USDA Food Data Central API
-const API_KEY = "mnv47hh5GWSxdtRPfWAlqYxbSaqygzS6SjtZM10t";
+const API_KEY = process.env.REACT_APP_USDA_API_KEY;
 
 export default function NutritionFinder() {
   const [query, setQuery] = useState('');

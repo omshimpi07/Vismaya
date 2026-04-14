@@ -50,8 +50,8 @@ const NearbyPoliceStations = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
-  const API_KEY = "41b0d2b21c3a4695a8df499107c34d5f"; // Geoapify key
-
+  
+  const API_KEY = process.env.REACT_APP_GEOAPIFY_API_KEY;
   // Detect mobile screen size
   useEffect(() => {
     const checkScreenSize = () => {

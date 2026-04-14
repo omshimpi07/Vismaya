@@ -27,7 +27,7 @@ const Fitness = () => {
       let allVideos = [];
       for (let query of queries) {
         const res = await axios.get(
-          `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=${count}&q=${encodeURIComponent(query)}&key=REMOVED_API_KEY`
+          `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=${count}&q=${encodeURIComponent(query)}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`
         );
         allVideos = [...allVideos, ...res.data.items];
       }

@@ -214,7 +214,7 @@ ${calendarLink}
 
   
     // Construct the API URL with parameters
-    const url = `http://api.textmebot.com/send.php?recipient=${phoneNumber}&apikey=oNJFHzWNvPX6&text=${encodeURIComponent(
+    const url = `http://api.textmebot.com/send.php?recipient=${phoneNumber}&apikey=${process.env.REACT_APP_TEXTME_API_KEY}&text=${encodeURIComponent(
       message
     )}`;
   
